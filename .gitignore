@@ -1,0 +1,26 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+
+# Downloaded dataset, shared tools and snapshot build contexts
+bvb-data/
+bvb-cache/
+
+# Generated task directories (regenerate via the adapter)
+datasets/
+
+# Harbor jobs and run outputs
+jobs/
+/outputs/
+verifier-eval/results/

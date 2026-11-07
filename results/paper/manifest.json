@@ -1,0 +1,136 @@
+{
+  "schema": "bvb-paper-results/v1",
+  "dataset_repository": "handshake-ai-research/BankerVerifierBench",
+  "dataset_revision": "e8068910360bcb54459a18c97cfc8d1548da37c1",
+  "counts": {
+    "release": {
+      "tasks": 24,
+      "criteria": 2464,
+      "human_unmet": 831,
+      "human_met": 1633
+    },
+    "runs": 1749,
+    "conditions": 29,
+    "criterion_decisions": 179455
+  },
+  "opc": {
+    "description": "OpenClaw verdicts: Gandalf, Archipelago, AAAJ and AutoRubric on Gemini 3 Flash, three passes",
+    "prediction_sha256": {
+      "gandalf": "00152b9849e3bd03d8d237e2e777c51328a6a0a7f6cc775f870f0deb4aab552f",
+      "archipelago": "f9ca5ea754e9bd9558aa1d0c3a911dcc5eee347f00ede049e805362a6b5c11ea",
+      "aaaj": "fdeac6e4f939a7459c8a6f767239ccc31343ccb6a06c50aad52c6a74575a064e",
+      "autorubric": "2bb88561fd7b98b8cd6e12a6a70aaac3cb7e74bdaaf9b0baccfa35eb680055f5"
+    },
+    "tags_sha256": "8d5b3c2a53e2c9b034ceb06f2d371e750d05158f8b86c6e3074f082331101fa1",
+    "passes": 3,
+    "rates_sha256": "ca7ba7fb5550314b103045139957a56ab14856c5f1078e307834f684ab5e9f78",
+    "intervals_sha256": "1f1683939dcd2a53c16d1dffa5dab7bf05e80f62ba40fbec95b0c0f839f5361e"
+  },
+  "files": [
+    {
+      "path": "baselines.json",
+      "bytes": 690,
+      "sha256": "986273b501f39eee13b0a05b3fb5e27542ff849d1e7845814ced223e90cc6324"
+    },
+    {
+      "path": "batching-sensitivities.json",
+      "bytes": 15333,
+      "sha256": "8dcab6e832a329a233da0ae590b093152accef1bab6f540e4b1e2cc537434062"
+    },
+    {
+      "path": "capabilities/archi_bimodal_rows.tex",
+      "bytes": 622,
+      "sha256": "a61a4ece195154e6c3072d505d7e34cbc21e6bc403f51a7c2b8554a633f21848"
+    },
+    {
+      "path": "capabilities/archipelago_fp_fn.csv",
+      "bytes": 1160,
+      "sha256": "ae04358f15e992bcc6750eb67a6072909d5fa9e72118dd8b22f2dd76584c9438"
+    },
+    {
+      "path": "capabilities/bvb_multi_tag_error_rates.csv",
+      "bytes": 1857,
+      "sha256": "91c56676f6d252ca696b3acbff54a446b6f6c2a17b3cb7184526a50a391eb6c5"
+    },
+    {
+      "path": "capabilities/bvb_primary_error_rates.csv",
+      "bytes": 1994,
+      "sha256": "89e2315a8bd2d929ad3f4c98fc1eacb9b2f7e11fb9ff4f77b309e6d8551004db"
+    },
+    {
+      "path": "capabilities/bvb_primary_error_rates_replicate_tags.csv",
+      "bytes": 1801,
+      "sha256": "b280a3941e8e2eedccde4464c77bbe5b4cd3e77d9ae60dbfd4e9768d61d9b291"
+    },
+    {
+      "path": "capabilities/capability_taxonomy.json",
+      "bytes": 16204,
+      "sha256": "3acb90627580d51cf5adbfdb5aa087aa0a2db9775a199df8573049975d08270a"
+    },
+    {
+      "path": "capabilities/criterion_capabilities.csv",
+      "bytes": 1058601,
+      "sha256": "123b8a08cf691259b8bc8aa1cc34ce2f856e2045d50388cae4f5f628de13bb66"
+    },
+    {
+      "path": "capabilities/criterion_capabilities_replicate.csv",
+      "bytes": 897493,
+      "sha256": "2df70847027b4104bfebfa11f5b1bc6ab9c1094b5c88cddfe9b8101031a4f737"
+    },
+    {
+      "path": "capabilities/opc_paired_error_differences_vs_gandalf.csv",
+      "bytes": 3315,
+      "sha256": "1f1683939dcd2a53c16d1dffa5dab7bf05e80f62ba40fbec95b0c0f839f5361e"
+    },
+    {
+      "path": "capabilities/opc_primary_error_rates.csv",
+      "bytes": 2388,
+      "sha256": "ca7ba7fb5550314b103045139957a56ab14856c5f1078e307834f684ab5e9f78"
+    },
+    {
+      "path": "capabilities/paired_error_differences_vs_gandalf.csv",
+      "bytes": 6639,
+      "sha256": "340d1c50f4b52809b3bdd8eb8a6ef1aa2b743b33eaf71fd21839f329e2b2f684"
+    },
+    {
+      "path": "capabilities/summary.json",
+      "bytes": 2570,
+      "sha256": "7d1f783aeb76048d257bce1328e234f9ccde97aa01f720f3cad2cd45cf19fbd4"
+    },
+    {
+      "path": "capabilities/tab_combined_appendix_bvb_rows.tex",
+      "bytes": 990,
+      "sha256": "293d6d68c7fcdf81077094aa1348ceb347cf46b7d198b5c2db63ec560eeda951"
+    },
+    {
+      "path": "capabilities/tab_combined_rows.tex",
+      "bytes": 1355,
+      "sha256": "c81964c60e82bc50a31df3208a074d999b89f6887bd98ad2b990ba83232db974"
+    },
+    {
+      "path": "capabilities/tab_taxonomy_rows.tex",
+      "bytes": 1896,
+      "sha256": "7b9d9aa4af25897ec7254dd9cd5fbb30b6fce9803d09f35984ad14f417f379a4"
+    },
+    {
+      "path": "capabilities/table1_capability_distribution.csv",
+      "bytes": 2489,
+      "sha256": "afaf8a797bfd5f933fd24827ef0f70ffac95da3c6e2b6ee57c1055e491ae0a89"
+    },
+    {
+      "path": "conditions.csv",
+      "bytes": 6818,
+      "sha256": "b69e00da268c303ba30f365aa279bffc320a91f4e5b2c024875da968f26081f9"
+    },
+    {
+      "path": "experiment-data.json.gz",
+      "bytes": 959662,
+      "sha256": "7841d07493bc70332650b1dfbebdf0cf52683ac1eb87d486cdf936c1243c5d69"
+    },
+    {
+      "path": "paired-comparisons.json",
+      "bytes": 2152,
+      "sha256": "72179413d71142ab1b167a8bddf34a9bb06aa0b65690022c8b1d1cc743744925"
+    }
+  ]
+}

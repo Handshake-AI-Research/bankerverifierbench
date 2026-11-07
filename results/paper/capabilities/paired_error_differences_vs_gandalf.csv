@@ -1,0 +1,37 @@
+capability,display_name,comparator,verifier,model,reference,delta_error_pp,ci95_low_pp,ci95_high_pp,bootstrap_draws,resolved,gandalf_better_resolved,matching_model,seed,multiplicity_adjusted
+audit_quantitative_metric_calculation_capability,Audit quantitative metric calculation,M13,archipelago,gemini-3-flash-preview,M01,1.98,-0.65,4.37,2000,False,False,True,20261102,False
+audit_quantitative_metric_calculation_capability,Audit quantitative metric calculation,M16,aaaj,gemini-3-flash-preview,M01,12.32,7.02,18.22,2000,True,True,True,20261102,False
+audit_quantitative_metric_calculation_capability,Audit quantitative metric calculation,M19,autorubric,gemini-3-flash-preview,M01,4.79,0.2,10.98,2000,True,True,True,20261102,False
+audit_quantitative_metric_calculation_capability,Audit quantitative metric calculation,M09,rewardkit,gpt-5.4,M01,-1.02,-3.43,1.07,2000,False,False,False,20261102,False
+inspect_visual_presentation_and_style_capability,Inspect visual presentation and style,M13,archipelago,gemini-3-flash-preview,M01,0.08,-3.65,3.91,2000,False,False,True,20261102,False
+inspect_visual_presentation_and_style_capability,Inspect visual presentation and style,M16,aaaj,gemini-3-flash-preview,M01,8.95,5.48,12.86,2000,True,True,True,20261102,False
+inspect_visual_presentation_and_style_capability,Inspect visual presentation and style,M19,autorubric,gemini-3-flash-preview,M01,0.9,-1.82,3.68,2000,False,False,True,20261102,False
+inspect_visual_presentation_and_style_capability,Inspect visual presentation and style,M09,rewardkit,gpt-5.4,M01,-4.76,-7.51,-2.11,2000,True,False,False,20261102,False
+verify_literal_data_point_accuracy_capability,Verify literal data point accuracy,M13,archipelago,gemini-3-flash-preview,M01,0.5,-2.51,3.49,2000,False,False,True,20261102,False
+verify_literal_data_point_accuracy_capability,Verify literal data point accuracy,M16,aaaj,gemini-3-flash-preview,M01,7.02,3.79,10.19,2000,True,True,True,20261102,False
+verify_literal_data_point_accuracy_capability,Verify literal data point accuracy,M19,autorubric,gemini-3-flash-preview,M01,1.17,-1.44,3.74,2000,False,False,True,20261102,False
+verify_literal_data_point_accuracy_capability,Verify literal data point accuracy,M09,rewardkit,gpt-5.4,M01,2.67,0.49,5.17,2000,True,True,False,20261102,False
+verify_structural_component_inventory_capability,Verify structural component inventory,M13,archipelago,gemini-3-flash-preview,M01,2.17,-0.3,4.63,2000,False,False,True,20261102,False
+verify_structural_component_inventory_capability,Verify structural component inventory,M16,aaaj,gemini-3-flash-preview,M01,8.7,4.73,12.49,2000,True,True,True,20261102,False
+verify_structural_component_inventory_capability,Verify structural component inventory,M19,autorubric,gemini-3-flash-preview,M01,2.17,0.21,3.89,2000,True,True,True,20261102,False
+verify_structural_component_inventory_capability,Verify structural component inventory,M09,rewardkit,gpt-5.4,M01,1.76,-0.33,3.82,2000,False,False,False,20261102,False
+reconcile_cross_component_data_linkage_capability,Reconcile cross component data linkage,M13,archipelago,gemini-3-flash-preview,M01,-0.88,-6.61,5.84,2000,False,False,True,20261102,False
+reconcile_cross_component_data_linkage_capability,Reconcile cross component data linkage,M16,aaaj,gemini-3-flash-preview,M01,13.36,7.78,18.69,2000,True,True,True,20261102,False
+reconcile_cross_component_data_linkage_capability,Reconcile cross component data linkage,M19,autorubric,gemini-3-flash-preview,M01,-1.32,-5.07,2.73,2000,False,False,True,20261102,False
+reconcile_cross_component_data_linkage_capability,Reconcile cross component data linkage,M09,rewardkit,gpt-5.4,M01,-2.35,-5.72,1.03,2000,False,False,False,20261102,False
+validate_document_labeling_and_metadata_capability,Validate document labeling and metadata,M13,archipelago,gemini-3-flash-preview,M01,1.35,-1.73,4.04,2000,False,False,True,20261102,False
+validate_document_labeling_and_metadata_capability,Validate document labeling and metadata,M16,aaaj,gemini-3-flash-preview,M01,7.03,3.33,10.9,2000,True,True,True,20261102,False
+validate_document_labeling_and_metadata_capability,Validate document labeling and metadata,M19,autorubric,gemini-3-flash-preview,M01,0.75,-2.5,3.6,2000,False,False,True,20261102,False
+validate_document_labeling_and_metadata_capability,Validate document labeling and metadata,M09,rewardkit,gpt-5.4,M01,-1.2,-5.09,2.45,2000,False,False,False,20261102,False
+audit_governance_and_strategic_narrative_capability,Audit governance and strategic narrative,M13,archipelago,gemini-3-flash-preview,M01,-2.33,-6.6,2.68,2000,False,False,True,20261102,False
+audit_governance_and_strategic_narrative_capability,Audit governance and strategic narrative,M16,aaaj,gemini-3-flash-preview,M01,4.13,-0.29,8.64,2000,False,False,True,20261102,False
+audit_governance_and_strategic_narrative_capability,Audit governance and strategic narrative,M19,autorubric,gemini-3-flash-preview,M01,-1.03,-6.13,4.63,2000,False,False,True,20261102,False
+audit_governance_and_strategic_narrative_capability,Audit governance and strategic narrative,M09,rewardkit,gpt-5.4,M01,2.07,-2.78,8.26,2000,False,False,False,20261102,False
+validate_temporal_and_sequential_integrity_capability,Validate temporal and sequential integrity,M13,archipelago,gemini-3-flash-preview,M01,7.05,2.64,13.08,2000,True,True,True,20261102,False
+validate_temporal_and_sequential_integrity_capability,Validate temporal and sequential integrity,M16,aaaj,gemini-3-flash-preview,M01,5.15,-0.52,10.87,2000,False,False,True,20261102,False
+validate_temporal_and_sequential_integrity_capability,Validate temporal and sequential integrity,M19,autorubric,gemini-3-flash-preview,M01,4.07,-0.22,9.47,2000,False,False,True,20261102,False
+validate_temporal_and_sequential_integrity_capability,Validate temporal and sequential integrity,M09,rewardkit,gpt-5.4,M01,4.34,-0.97,9.16,2000,False,False,False,20261102,False
+audit_accounting_logic_and_convention_capability,Audit accounting logic and convention,M13,archipelago,gemini-3-flash-preview,M01,2.06,-1.43,6.36,2000,False,False,True,20261102,False
+audit_accounting_logic_and_convention_capability,Audit accounting logic and convention,M16,aaaj,gemini-3-flash-preview,M01,12.98,5.25,22.65,2000,True,True,True,20261102,False
+audit_accounting_logic_and_convention_capability,Audit accounting logic and convention,M19,autorubric,gemini-3-flash-preview,M01,5.31,1.23,9.32,2000,True,True,True,20261102,False
+audit_accounting_logic_and_convention_capability,Audit accounting logic and convention,M09,rewardkit,gpt-5.4,M01,-0.88,-5.07,3.3,2000,False,False,False,20261102,False

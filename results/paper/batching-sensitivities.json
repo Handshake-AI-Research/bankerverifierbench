@@ -1,0 +1,559 @@
+{
+  "risk_records": [
+    {
+      "slot": [
+        "b16",
+        "btb-0fc7bc3c",
+        2
+      ],
+      "record": "results/b16/repeat-2/btb-0fc7bc3c/native-evidence-risk-audit-v1.json",
+      "finding": "Executed create_teaser_final.py from workspace and successfully rewrote private Project_Atlas_Teaser.pptx, then read it."
+    },
+    {
+      "slot": [
+        "b16",
+        "btb-0fc7bc3c",
+        3
+      ],
+      "record": "results/b16/repeat-3/btb-0fc7bc3c/native-evidence-risk-audit-v1.json",
+      "finding": "Attempted original rollout generation failed at relative-path save; native original retained"
+    },
+    {
+      "slot": [
+        "b4",
+        "btb-c7bbdb93",
+        3
+      ],
+      "record": "results/b4/repeat-3/btb-c7bbdb93/native-evidence-risk-audit-v1.json",
+      "finding": "Original rollout generation script execution attempted; blocked before model writer call"
+    },
+    {
+      "slot": [
+        "b8",
+        "btb-0fc7bc3c",
+        3
+      ],
+      "record": "results/b8/repeat-3/btb-0fc7bc3c/native-evidence-risk-audit-v1.json",
+      "finding": "Attempted original rollout generation failed at relative-path save; native original retained"
+    },
+    {
+      "slot": [
+        "b64",
+        "btb-1b181d77",
+        3
+      ],
+      "record": "results/b64/repeat-3/btb-1b181d77/native-evidence-quality-audit-v1.json",
+      "finding": "Hardcoded original read_docx helper failed; subsequent reader heredocs echo commands without document content, so independent source verification is not established by them. Actual delivered-workbook reads succeeded."
+    },
+    {
+      "slot": [
+        "split2",
+        "btb-55fd995a",
+        3
+      ],
+      "record": "results/split2/repeat-3/btb-55fd995a/native-evidence-quality-audit-v1.json",
+      "finding": "native-grading-quality-warning"
+    }
+  ],
+  "sensitivities": {
+    "matched_flagged_slot_removal": {
+      "description": "Remove every known generator-attempt/contamination or evidence-quality flagged task/repeat from every condition, preserving matched slots; exploratory post-hoc sensitivity.",
+      "excluded_task_repeats": [
+        [
+          "btb-0fc7bc3c",
+          2
+        ],
+        [
+          "btb-0fc7bc3c",
+          3
+        ],
+        [
+          "btb-1b181d77",
+          3
+        ],
+        [
+          "btb-55fd995a",
+          3
+        ],
+        [
+          "btb-c7bbdb93",
+          3
+        ]
+      ],
+      "conditions": {
+        "b4": {
+          "slots": 67,
+          "counts": {
+            "tp": 2168,
+            "fp": 444,
+            "fn": 183,
+            "tn": 4074
+          },
+          "precision": 0.8300153139356815,
+          "recall": 0.9221607826456827,
+          "f1": 0.8736651219020753,
+          "accuracy": 0.9087203377493085
+        },
+        "b8": {
+          "slots": 67,
+          "counts": {
+            "tp": 2171,
+            "fp": 426,
+            "fn": 180,
+            "tn": 4092
+          },
+          "precision": 0.8359645745090489,
+          "recall": 0.9234368353891961,
+          "f1": 0.8775262732417137,
+          "accuracy": 0.9117775513175135
+        },
+        "b16": {
+          "slots": 67,
+          "counts": {
+            "tp": 2142,
+            "fp": 354,
+            "fn": 209,
+            "tn": 4164
+          },
+          "precision": 0.8581730769230769,
+          "recall": 0.9111016588685665,
+          "f1": 0.8838456777388075,
+          "accuracy": 0.9180375600524093
+        },
+        "b32": {
+          "slots": 67,
+          "counts": {
+            "tp": 2105,
+            "fp": 337,
+            "fn": 246,
+            "tn": 4181
+          },
+          "precision": 0.861998361998362,
+          "recall": 0.8953636750319013,
+          "f1": 0.87836428124348,
+          "accuracy": 0.9151259280826903
+        },
+        "b64": {
+          "slots": 67,
+          "counts": {
+            "tp": 1986,
+            "fp": 279,
+            "fn": 365,
+            "tn": 4239
+          },
+          "precision": 0.8768211920529801,
+          "recall": 0.8447469162058698,
+          "f1": 0.8604852686308493,
+          "accuracy": 0.9062454505750474
+        },
+        "split2": {
+          "slots": 67,
+          "counts": {
+            "tp": 2021,
+            "fp": 291,
+            "fn": 330,
+            "tn": 4227
+          },
+          "precision": 0.8741349480968859,
+          "recall": 0.8596341982135262,
+          "f1": 0.8668239330902853,
+          "accuracy": 0.9095938273402242
+        }
+      },
+      "b16_deltas": {
+        "b4": -0.010180555836732164,
+        "b8": -0.0063194044970937835,
+        "b32": -0.0054813964953275285,
+        "b64": -0.023360409107958224,
+        "split2": -0.01702174464852224
+      }
+    },
+    "source_artifact_task_removal": {
+      "description": "Exploratory task-level sensitivity excluding CMCSA (source-vintage/period-access limitations) from every condition. This is not a replacement benchmark.",
+      "excluded_tasks": [
+        "btb-8e61629c"
+      ],
+      "conditions": {
+        "b4": {
+          "slots": 69,
+          "counts": {
+            "tp": 2198,
+            "fp": 446,
+            "fn": 202,
+            "tn": 4234
+          },
+          "precision": 0.8313161875945537,
+          "recall": 0.9158333333333334,
+          "f1": 0.8715305313243458,
+          "accuracy": 0.9084745762711864
+        },
+        "b8": {
+          "slots": 69,
+          "counts": {
+            "tp": 2198,
+            "fp": 425,
+            "fn": 202,
+            "tn": 4255
+          },
+          "precision": 0.8379717880289744,
+          "recall": 0.9158333333333334,
+          "f1": 0.8751741986860442,
+          "accuracy": 0.9114406779661017
+        },
+        "b16": {
+          "slots": 69,
+          "counts": {
+            "tp": 2173,
+            "fp": 364,
+            "fn": 227,
+            "tn": 4316
+          },
+          "precision": 0.8565234528971226,
+          "recall": 0.9054166666666666,
+          "f1": 0.8802916751063399,
+          "accuracy": 0.9165254237288135
+        },
+        "b32": {
+          "slots": 69,
+          "counts": {
+            "tp": 2129,
+            "fp": 347,
+            "fn": 271,
+            "tn": 4333
+          },
+          "precision": 0.8598546042003231,
+          "recall": 0.8870833333333333,
+          "f1": 0.873256767842494,
+          "accuracy": 0.9127118644067796
+        },
+        "b64": {
+          "slots": 69,
+          "counts": {
+            "tp": 2019,
+            "fp": 286,
+            "fn": 381,
+            "tn": 4394
+          },
+          "precision": 0.8759219088937094,
+          "recall": 0.84125,
+          "f1": 0.8582359192348566,
+          "accuracy": 0.9057909604519774
+        },
+        "split2": {
+          "slots": 69,
+          "counts": {
+            "tp": 2047,
+            "fp": 301,
+            "fn": 353,
+            "tn": 4379
+          },
+          "precision": 0.8718057921635435,
+          "recall": 0.8529166666666667,
+          "f1": 0.8622577927548442,
+          "accuracy": 0.9076271186440678
+        }
+      },
+      "b16_deltas": {
+        "b4": -0.008761143781994107,
+        "b8": -0.005117476420295697,
+        "b32": -0.007034907263845924,
+        "b64": -0.02205575587148323,
+        "split2": -0.018033882351495722
+      }
+    }
+  },
+  "native_retry_sensitivity": [
+    {
+      "condition": "b16",
+      "complete_condition": true,
+      "accepted": 72,
+      "native_retry_runs": 9,
+      "no_native_retry_slots": 63,
+      "task_coverage": 24,
+      "pooled": {
+        "counts": {
+          "tp": 1962,
+          "fp": 319,
+          "fn": 221,
+          "tn": 3947
+        },
+        "precision": 0.8601490574309514,
+        "recall": 0.8987631699496106,
+        "accuracy": 0.9162660877655451,
+        "mcc": 0.8155123742025728,
+        "unmet_rate": 0.3536982477903551,
+        "f1_unmet": 0.8790322580645161
+      }
+    },
+    {
+      "condition": "split2",
+      "complete_condition": true,
+      "accepted": 72,
+      "native_retry_runs": 0,
+      "no_native_retry_slots": 72,
+      "task_coverage": 24,
+      "pooled": {
+        "counts": {
+          "tp": 2120,
+          "fp": 306,
+          "fn": 373,
+          "tn": 4593
+        },
+        "precision": 0.8738664468260511,
+        "recall": 0.8503810669875652,
+        "accuracy": 0.9081439393939394,
+        "mcc": 0.7933190147025606,
+        "unmet_rate": 0.3281926406926407,
+        "f1_unmet": 0.8619638137832893
+      },
+      "matched_b16_comparison": {
+        "slots": 63,
+        "task_coverage": 24,
+        "condition_metrics": {
+          "counts": {
+            "tp": 1858,
+            "fp": 261,
+            "fn": 325,
+            "tn": 4005
+          },
+          "precision": 0.8768286927796131,
+          "recall": 0.8511223087494274,
+          "accuracy": 0.909133198945573,
+          "mcc": 0.7958339336178067,
+          "unmet_rate": 0.3285780741200186,
+          "f1_unmet": 0.8637842863784286
+        },
+        "reference_metrics": {
+          "counts": {
+            "tp": 1962,
+            "fp": 319,
+            "fn": 221,
+            "tn": 3947
+          },
+          "precision": 0.8601490574309514,
+          "recall": 0.8987631699496106,
+          "accuracy": 0.9162660877655451,
+          "mcc": 0.8155123742025728,
+          "unmet_rate": 0.3536982477903551,
+          "f1_unmet": 0.8790322580645161
+        }
+      }
+    },
+    {
+      "condition": "b32",
+      "complete_condition": true,
+      "accepted": 72,
+      "native_retry_runs": 4,
+      "no_native_retry_slots": 68,
+      "task_coverage": 24,
+      "pooled": {
+        "counts": {
+          "tp": 2106,
+          "fp": 338,
+          "fn": 276,
+          "tn": 4269
+        },
+        "precision": 0.8617021276595744,
+        "recall": 0.8841309823677582,
+        "accuracy": 0.9121476606095292,
+        "mcc": 0.8058553491383773,
+        "unmet_rate": 0.3496923737301474,
+        "f1_unmet": 0.87277248238707
+      },
+      "matched_b16_comparison": {
+        "slots": 59,
+        "task_coverage": 24,
+        "condition_metrics": {
+          "counts": {
+            "tp": 1825,
+            "fp": 291,
+            "fn": 247,
+            "tn": 3683
+          },
+          "precision": 0.8624763705103969,
+          "recall": 0.8807915057915058,
+          "accuracy": 0.9110155474694013,
+          "mcc": 0.8035862131966663,
+          "unmet_rate": 0.34998346013893483,
+          "f1_unmet": 0.8715377268385864
+        },
+        "reference_metrics": {
+          "counts": {
+            "tp": 1865,
+            "fp": 305,
+            "fn": 207,
+            "tn": 3669
+          },
+          "precision": 0.8594470046082949,
+          "recall": 0.900096525096525,
+          "accuracy": 0.9153159113463447,
+          "mcc": 0.8146485897178276,
+          "unmet_rate": 0.35891498511412506,
+          "f1_unmet": 0.8793022159358793
+        }
+      }
+    },
+    {
+      "condition": "b8",
+      "complete_condition": true,
+      "accepted": 72,
+      "native_retry_runs": 19,
+      "no_native_retry_slots": 53,
+      "task_coverage": 23,
+      "pooled": {
+        "counts": {
+          "tp": 1728,
+          "fp": 325,
+          "fn": 172,
+          "tn": 3144
+        },
+        "precision": 0.8416950803701899,
+        "recall": 0.9094736842105263,
+        "accuracy": 0.9074315514993481,
+        "mcc": 0.8027011000209311,
+        "unmet_rate": 0.38238033153287393,
+        "f1_unmet": 0.8742727042752338
+      },
+      "matched_b16_comparison": {
+        "slots": 46,
+        "task_coverage": 21,
+        "condition_metrics": {
+          "counts": {
+            "tp": 1499,
+            "fp": 288,
+            "fn": 161,
+            "tn": 2698
+          },
+          "precision": 0.8388360380526021,
+          "recall": 0.903012048192771,
+          "accuracy": 0.9033577270770555,
+          "mcc": 0.7944513742679065,
+          "unmet_rate": 0.38463194145501506,
+          "f1_unmet": 0.869741804467653
+        },
+        "reference_metrics": {
+          "counts": {
+            "tp": 1486,
+            "fp": 236,
+            "fn": 174,
+            "tn": 2750
+          },
+          "precision": 0.8629500580720093,
+          "recall": 0.8951807228915662,
+          "accuracy": 0.9117520447696944,
+          "mcc": 0.8097689713165721,
+          "unmet_rate": 0.3706414119672837,
+          "f1_unmet": 0.8787699586043761
+        }
+      }
+    },
+    {
+      "condition": "b64",
+      "complete_condition": true,
+      "accepted": 72,
+      "native_retry_runs": 3,
+      "no_native_retry_slots": 69,
+      "task_coverage": 24,
+      "pooled": {
+        "counts": {
+          "tp": 2012,
+          "fp": 281,
+          "fn": 375,
+          "tn": 4443
+        },
+        "precision": 0.8774531181857829,
+        "recall": 0.8428990364474236,
+        "accuracy": 0.9077485585712277,
+        "mcc": 0.7914763006220825,
+        "unmet_rate": 0.3224581634088033,
+        "f1_unmet": 0.8598290598290599
+      },
+      "matched_b16_comparison": {
+        "slots": 60,
+        "task_coverage": 24,
+        "condition_metrics": {
+          "counts": {
+            "tp": 1743,
+            "fp": 242,
+            "fn": 334,
+            "tn": 3849
+          },
+          "precision": 0.8780856423173804,
+          "recall": 0.8391911410688493,
+          "accuracy": 0.9066147859922179,
+          "mcc": 0.7890852908535496,
+          "unmet_rate": 0.321822308690013,
+          "f1_unmet": 0.8581979320531757
+        },
+        "reference_metrics": {
+          "counts": {
+            "tp": 1861,
+            "fp": 302,
+            "fn": 216,
+            "tn": 3789
+          },
+          "precision": 0.8603791030975497,
+          "recall": 0.8960038517091959,
+          "accuracy": 0.916018158236057,
+          "mcc": 0.8142768791296648,
+          "unmet_rate": 0.35068093385214005,
+          "f1_unmet": 0.8778301886792453
+        }
+      }
+    },
+    {
+      "condition": "b4",
+      "complete_condition": true,
+      "accepted": 72,
+      "native_retry_runs": 15,
+      "no_native_retry_slots": 57,
+      "task_coverage": 24,
+      "pooled": {
+        "counts": {
+          "tp": 1857,
+          "fp": 372,
+          "fn": 179,
+          "tn": 3386
+        },
+        "precision": 0.8331090174966352,
+        "recall": 0.9120825147347741,
+        "accuracy": 0.9049016223679669,
+        "mcc": 0.7978533347856964,
+        "unmet_rate": 0.3847083189506386,
+        "f1_unmet": 0.8708089097303634
+      },
+      "matched_b16_comparison": {
+        "slots": 52,
+        "task_coverage": 24,
+        "condition_metrics": {
+          "counts": {
+            "tp": 1637,
+            "fp": 320,
+            "fn": 172,
+            "tn": 3168
+          },
+          "precision": 0.8364844149207972,
+          "recall": 0.9049198452183527,
+          "accuracy": 0.9071172361714178,
+          "mcc": 0.7989577530193507,
+          "unmet_rate": 0.36945440815555974,
+          "f1_unmet": 0.8693574083908656
+        },
+        "reference_metrics": {
+          "counts": {
+            "tp": 1619,
+            "fp": 271,
+            "fn": 190,
+            "tn": 3217
+          },
+          "precision": 0.8566137566137566,
+          "recall": 0.8949695964621338,
+          "accuracy": 0.9129696054370399,
+          "mcc": 0.8090187311511735,
+          "unmet_rate": 0.35680573909760244,
+          "f1_unmet": 0.8753717220870506
+        }
+      }
+    }
+  ]
+}

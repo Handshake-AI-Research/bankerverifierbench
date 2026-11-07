@@ -1,0 +1,22 @@
+capability,display_name,comparator,reference,n_tasks_with_capability,delta_error_pp,ci95_low_pp,ci95_high_pp,bootstrap_draws,resolved,gandalf_better_resolved,seed,multiplicity_adjusted
+verify_literal_data_point_accuracy_capability,Verify literal data point accuracy,archipelago,gandalf,24,11.67,5.53,20.24,2000,True,True,20261102,False
+verify_literal_data_point_accuracy_capability,Verify literal data point accuracy,aaaj,gandalf,24,17.83,8.98,28.42,2000,True,True,20261102,False
+verify_literal_data_point_accuracy_capability,Verify literal data point accuracy,autorubric,gandalf,24,1.33,-0.75,3.74,2000,False,False,20261102,False
+verify_structural_component_inventory_capability,Verify structural component inventory,archipelago,gandalf,19,16.98,6.5,31.97,2000,True,True,20261102,False
+verify_structural_component_inventory_capability,Verify structural component inventory,aaaj,gandalf,19,6.29,1.31,12.17,2000,True,True,20261102,False
+verify_structural_component_inventory_capability,Verify structural component inventory,autorubric,gandalf,19,4.4,-1.31,14.53,2000,False,False,20261102,False
+reconcile_cross_component_data_linkage_capability,Reconcile cross component data linkage,archipelago,gandalf,9,26.67,0.0,42.86,2000,False,False,20261102,False
+reconcile_cross_component_data_linkage_capability,Reconcile cross component data linkage,aaaj,gandalf,9,20.0,-9.52,34.21,2000,False,False,20261102,False
+reconcile_cross_component_data_linkage_capability,Reconcile cross component data linkage,autorubric,gandalf,9,10.0,-19.05,27.08,2000,False,False,20261102,False
+validate_document_labeling_and_metadata_capability,Validate document labeling and metadata,archipelago,gandalf,18,25.2,10.75,43.33,2000,True,True,20261102,False
+validate_document_labeling_and_metadata_capability,Validate document labeling and metadata,aaaj,gandalf,18,4.88,-4.27,18.02,2000,False,False,20261102,False
+validate_document_labeling_and_metadata_capability,Validate document labeling and metadata,autorubric,gandalf,18,-4.07,-7.89,-0.85,2000,True,False,20261102,False
+audit_governance_and_strategic_narrative_capability,Audit governance and strategic narrative,archipelago,gandalf,22,21.21,0.0,42.86,2000,False,False,20261102,False
+audit_governance_and_strategic_narrative_capability,Audit governance and strategic narrative,aaaj,gandalf,22,16.67,5.13,27.88,2000,True,True,20261102,False
+audit_governance_and_strategic_narrative_capability,Audit governance and strategic narrative,autorubric,gandalf,22,3.54,-3.03,12.86,2000,False,False,20261102,False
+validate_temporal_and_sequential_integrity_capability,Validate temporal and sequential integrity,archipelago,gandalf,6,27.78,0.0,66.67,2000,False,False,20261102,False
+validate_temporal_and_sequential_integrity_capability,Validate temporal and sequential integrity,aaaj,gandalf,6,11.11,0.0,26.67,2000,False,False,20261102,False
+validate_temporal_and_sequential_integrity_capability,Validate temporal and sequential integrity,autorubric,gandalf,6,11.11,0.0,26.67,2000,False,False,20261102,False
+__aggregate__,Aggregate,archipelago,gandalf,24,16.5,9.0,25.38,2000,True,True,20261102,False
+__aggregate__,Aggregate,aaaj,gandalf,24,14.48,7.74,21.84,2000,True,True,20261102,False
+__aggregate__,Aggregate,autorubric,gandalf,24,2.27,-0.7,5.45,2000,False,False,20261102,False

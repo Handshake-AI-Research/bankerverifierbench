@@ -1,0 +1,10 @@
+capability,display_name,n_any_tag,gandalf,archipelago,aaaj,autorubric,rewardkit,best_flash_verifiers
+audit_quantitative_metric_calculation_capability,Audit quantitative metric calculation,730,8.2648401826484,9.726027397260275,20.730593607305934,12.511415525114156,6.712328767123288,gandalf
+inspect_visual_presentation_and_style_capability,Inspect visual presentation and style,502,16.201859229747676,16.268260292164673,25.431606905710492,17.065073041168656,11.42098273572377,gandalf
+verify_literal_data_point_accuracy_capability,Verify literal data point accuracy,844,6.042654028436019,6.516587677725119,14.336492890995261,7.543443917851501,7.109004739336493,gandalf
+verify_structural_component_inventory_capability,Verify structural component inventory,566,6.18374558303887,7.1849234393404,13.839811542991756,7.597173144876325,7.420494699646643,gandalf
+reconcile_cross_component_data_linkage_capability,Reconcile cross component data linkage,502,11.952191235059761,12.682602921646746,26.759628154050464,15.405046480743692,11.819389110225764,gandalf
+validate_document_labeling_and_metadata_capability,Validate document labeling and metadata,609,8.866995073891626,9.852216748768473,15.435139573070607,10.454296661193213,8.75752599890531,gandalf
+audit_governance_and_strategic_narrative_capability,Audit governance and strategic narrative,211,9.47867298578199,8.056872037914692,14.218009478672986,8.214849921011059,12.796208530805686,archipelago
+validate_temporal_and_sequential_integrity_capability,Validate temporal and sequential integrity,299,7.6923076923076925,10.144927536231885,17.725752508361204,9.92196209587514,9.92196209587514,gandalf
+audit_accounting_logic_and_convention_capability,Audit accounting logic and convention,272,10.17156862745098,10.17156862745098,20.833333333333336,13.112745098039216,9.436274509803921,gandalf;archipelago

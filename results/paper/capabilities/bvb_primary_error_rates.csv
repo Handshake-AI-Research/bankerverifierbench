@@ -1,0 +1,11 @@
+capability,display_name,n_unique_criteria,gandalf,archipelago,aaaj,autorubric,rewardkit,best_flash_verifiers
+audit_quantitative_metric_calculation_capability,Audit quantitative metric calculation,522,7.0242656449553005,9.003831417624522,19.34865900383142,11.813537675606641,6.002554278416347,gandalf
+inspect_visual_presentation_and_style_capability,Inspect visual presentation and style,406,16.091954022988507,16.174055829228244,25.04105090311987,16.995073891625616,11.330049261083744,gandalf
+verify_literal_data_point_accuracy_capability,Verify literal data point accuracy,399,4.761904761904762,5.263157894736842,11.779448621553884,5.931495405179615,7.435254803675856,gandalf
+verify_structural_component_inventory_capability,Verify structural component inventory,322,4.865424430641822,7.039337474120083,13.561076604554865,7.039337474120083,6.625258799171843,gandalf
+reconcile_cross_component_data_linkage_capability,Reconcile cross component data linkage,227,15.418502202643172,14.537444933920703,28.781204111600587,14.096916299559473,13.069016152716593,autorubric
+validate_document_labeling_and_metadata_capability,Validate document labeling and metadata,223,8.968609865470851,10.31390134529148,15.994020926756352,9.715994020926756,7.772795216741405,gandalf
+audit_governance_and_strategic_narrative_capability,Audit governance and strategic narrative,129,10.335917312661499,8.010335917312661,14.470284237726098,9.30232558139535,12.4031007751938,archipelago
+validate_temporal_and_sequential_integrity_capability,Validate temporal and sequential integrity,123,7.046070460704606,14.092140921409213,12.195121951219512,11.11111111111111,11.38211382113821,gandalf
+audit_accounting_logic_and_convention_capability,Audit accounting logic and convention,113,10.914454277286136,12.979351032448378,23.893805309734514,16.224188790560472,10.029498525073747,gandalf
+__aggregate__,Aggregate,2464,9.172077922077925,10.335497835497831,18.465909090909093,11.14718614718615,8.793290043290048,gandalf

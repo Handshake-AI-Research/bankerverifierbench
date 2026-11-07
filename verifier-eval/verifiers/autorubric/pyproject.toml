@@ -1,0 +1,20 @@
+[project]
+name = "verifier-eval-autorubric"
+version = "0.1.0"
+description = "uv project pinning autorubric for the BTB verifier-eval harness."
+requires-python = ">=3.11"
+dependencies = [
+    "autorubric==1.0.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+# This is a venv-only project — no source to package. Skip discovery.
+include = []
+
+[tool.hatch.build.targets.wheel]
+# Bypass hatchling's "no packages found" check; we never build a wheel here.
+bypass-selection = true

@@ -1,0 +1,110 @@
+[
+  [
+    "Model repeat1",
+    "gandalf gemini-3.8-flash",
+    "gandalf gemini-3-flash-preview",
+    0.02773477562551996,
+    0.007725233482519189,
+    0.050487781998968306,
+    24,
+    1,
+    10000,
+    "Exploratory fixed-repeat task interval; no multiplicity correction"
+  ],
+  [
+    "Model repeat1",
+    "gandalf gemini-3.8-flash",
+    "gandalf gpt-5.4",
+    0.00701811358879989,
+    -0.014690019997412374,
+    0.027947462021863934,
+    24,
+    1,
+    10000,
+    "Exploratory fixed-repeat task interval; no multiplicity correction"
+  ],
+  [
+    "Model repeat1",
+    "gandalf gemini-3.5-flash-lite",
+    "gandalf gemini-3-flash-preview",
+    -0.14801259528314126,
+    -0.24857471338469306,
+    -0.07496923076923068,
+    24,
+    1,
+    10000,
+    "Exploratory fixed-repeat task interval; no multiplicity correction"
+  ],
+  [
+    "Model repeat1",
+    "gandalf gemini-3.8-flash",
+    "rewardkit gpt-5.4-mini",
+    0.010913080298714295,
+    -0.011866777303074616,
+    0.033804761585149556,
+    24,
+    1,
+    10000,
+    "Exploratory fixed-repeat task interval; no multiplicity correction"
+  ],
+  [
+    "Batching",
+    "b32",
+    "b16",
+    -0.006885746067747167,
+    -0.014438347730030276,
+    0.0006009316270095821,
+    24,
+    3,
+    2000,
+    "Paired task clusters; all three repetitions retained"
+  ],
+  [
+    "Batching",
+    "b4",
+    "b16",
+    -0.010140279005333652,
+    -0.02329810717664249,
+    0.0022143280699106205,
+    24,
+    3,
+    2000,
+    "Paired task clusters; all three repetitions retained"
+  ],
+  [
+    "Batching",
+    "b64",
+    "b16",
+    -0.021888706462743546,
+    -0.03510867712451038,
+    -0.008042870169615801,
+    24,
+    3,
+    2000,
+    "Paired task clusters; all three repetitions retained"
+  ],
+  [
+    "Batching",
+    "b8",
+    "b16",
+    -0.006256883935076396,
+    -0.014632111973859607,
+    0.0013271857326451197,
+    24,
+    3,
+    2000,
+    "Paired task clusters; all three repetitions retained"
+  ],
+  [
+    "Batching",
+    "split2",
+    "b16",
+    -0.018239430305043713,
+    -0.03436872332412755,
+    -0.0022873456111511814,
+    24,
+    3,
+    2000,
+    "Paired task clusters; all three repetitions retained"
+  ]
+]

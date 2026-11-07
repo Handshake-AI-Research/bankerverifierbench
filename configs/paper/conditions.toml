@@ -1,0 +1,299 @@
+# Measured conditions of the paper results (results/paper).
+#
+# Each entry records the runner and native settings a condition was measured
+# with. `bvb run --condition <id>` turns an entry into the runner's
+# own command line; it does not change any runner. Metrics for every id are in
+# results/paper/conditions.csv.
+#
+# Runners:
+#   gandalf-daytona   scripts/run_bvb_gandalf_daytona.py on the base snapshot
+#   gandalf-matrix    scripts/run_bvb_gandalf_matrix.py on the derived gandalf-llm snapshot
+#   rewardkit-daytona scripts/run_bvb_rewardkit_daytona.py on the derived rewardkit snapshot
+#   host-matrix       scripts/run_bvb_verifier_matrix.py on evidence staged by a gandalf-daytona run
+#   gandalf-batching  scripts/run_bvb_gandalf_batching.py on the derived gandalf-llm snapshot
+#
+# Derived snapshots are built with `python -m adapters.bvb.runtime_snapshots`.
+# Host conditions without `litellm_version` used the verifier's locked runtime.
+
+schema = "bvb-conditions/v1"
+
+[[condition]]
+id = "M01"
+verifier = "gandalf"
+model = "gemini/gemini-3-flash-preview"
+runner = "gandalf-daytona"
+repeats = 3
+reasoning_effort = "high"
+concurrency = 25
+
+[[condition]]
+id = "M02"
+verifier = "gandalf"
+model = "gemini/gemini-3.1-pro-preview"
+runner = "gandalf-matrix"
+repeats = 3
+reasoning_effort = "high"
+concurrency = 10
+
+[[condition]]
+id = "M03"
+verifier = "gandalf"
+model = "gemini/gemini-3.5-flash-lite"
+runner = "gandalf-matrix"
+repeats = 1
+reasoning_effort = "high"
+concurrency = 10
+
+[[condition]]
+id = "M04"
+verifier = "gandalf"
+model = "gemini/gemini-3.8-flash"
+runner = "gandalf-matrix"
+repeats = 1
+reasoning_effort = "high"
+concurrency = 10
+
+[[condition]]
+id = "M05"
+verifier = "gandalf"
+model = "openai/gpt-5.4"
+runner = "gandalf-matrix"
+repeats = 3
+reasoning_effort = "high"
+concurrency = 10
+
+[[condition]]
+id = "M06"
+verifier = "gandalf"
+model = "openai/gpt-5.4-mini"
+runner = "gandalf-matrix"
+repeats = 3
+reasoning_effort = "high"
+concurrency = 10
+
+[[condition]]
+id = "M07"
+verifier = "gandalf"
+model = "openai/gpt-5.4-nano"
+runner = "gandalf-matrix"
+repeats = 3
+reasoning_effort = "high"
+concurrency = 10
+
+[[condition]]
+id = "M08"
+verifier = "gandalf"
+model = "openai/gpt-6.1-sol"
+runner = "gandalf-matrix"
+repeats = 3
+reasoning_effort = "high"
+concurrency = 10
+notes = "Screened at one repeat, then promoted to three by a fixed cost gate."
+
+[[condition]]
+id = "M09"
+verifier = "rewardkit"
+model = "openai/gpt-5.4"
+runner = "rewardkit-daytona"
+repeats = 3
+reasoning_effort = "high"
+concurrency = 10
+
+[[condition]]
+id = "M10"
+verifier = "rewardkit"
+model = "openai/gpt-5.4-mini"
+runner = "rewardkit-daytona"
+repeats = 3
+reasoning_effort = "high"
+concurrency = 5
+
+[[condition]]
+id = "M11"
+verifier = "rewardkit"
+model = "openai/gpt-5.4-nano"
+runner = "rewardkit-daytona"
+repeats = 3
+reasoning_effort = "high"
+concurrency = 5
+
+[[condition]]
+id = "M12"
+verifier = "rewardkit"
+model = "openai/gpt-6.1-sol"
+runner = "rewardkit-daytona"
+repeats = 3
+reasoning_effort = "high"
+concurrency = 5
+notes = "Screened at one repeat, then promoted to three by a fixed cost gate."
+
+[[condition]]
+id = "M13"
+verifier = "archipelago"
+model = "gemini/gemini-3-flash-preview"
+runner = "host-matrix"
+repeats = 3
+concurrency = 1
+notes = "23 of 72 runs came from an earlier launch with four tasks at a time; judge settings were identical."
+
+[[condition]]
+id = "M14"
+verifier = "archipelago"
+model = "openai/gpt-5.4"
+runner = "host-matrix"
+repeats = 3
+concurrency = 1
+litellm_version = "1.104.0"
+
+[[condition]]
+id = "M15"
+verifier = "archipelago"
+model = "openai/gpt-5.4-mini"
+runner = "host-matrix"
+repeats = 3
+concurrency = 1
+litellm_version = "1.104.0"
+
+[[condition]]
+id = "M16"
+verifier = "aaaj"
+model = "gemini/gemini-3-flash-preview"
+runner = "host-matrix"
+repeats = 3
+concurrency = 2
+
+[[condition]]
+id = "M17"
+verifier = "aaaj"
+model = "openai/gpt-5.4"
+runner = "host-matrix"
+repeats = 1
+concurrency = 2
+litellm_version = "1.104.0"
+
+[[condition]]
+id = "M18"
+verifier = "aaaj"
+model = "openai/gpt-5.4-mini"
+runner = "host-matrix"
+repeats = 1
+concurrency = 2
+litellm_version = "1.104.0"
+
+[[condition]]
+id = "M19"
+verifier = "autorubric"
+model = "gemini/gemini-3-flash-preview"
+runner = "host-matrix"
+repeats = 3
+concurrency = 1
+autorubric_parallel_requests = 4
+autorubric_request_timeout = 60
+autorubric_worker_timeout = 1800
+notes = "65 of 72 runs used these settings with AutoRubric's native transport retries. Three tasks (7 runs) failed on a worker timeout or request errors and were rerun with 1 parallel request, a 180 s request timeout, a 7,200 s worker timeout and the runner's added transport retries, which the runner now always applies."
+
+[[condition]]
+id = "M20"
+verifier = "autorubric"
+model = "openai/gpt-5.4"
+runner = "host-matrix"
+repeats = 1
+concurrency = 1
+litellm_version = "1.104.0"
+autorubric_parallel_requests = 2
+autorubric_request_timeout = 180
+autorubric_worker_timeout = 7200
+notes = "Held on cost after one public task; not a complete condition."
+
+[[condition]]
+id = "E01"
+verifier = "archipelago"
+model = "gemini/gemini-3.1-pro-preview"
+runner = "host-matrix"
+repeats = 3
+concurrency = 1
+litellm_version = "1.104.0"
+notes = "Exploratory; deferred before completion."
+
+[[condition]]
+id = "E02"
+verifier = "archipelago"
+model = "openai/gpt-5.4-nano"
+runner = "host-matrix"
+repeats = 3
+concurrency = 1
+litellm_version = "1.104.0"
+notes = "Exploratory; deferred before completion."
+
+[[condition]]
+id = "E03"
+verifier = "autorubric"
+model = "gemini/gemini-3.1-pro-preview"
+runner = "host-matrix"
+repeats = 3
+concurrency = 1
+litellm_version = "1.104.0"
+autorubric_parallel_requests = 2
+autorubric_request_timeout = 180
+autorubric_worker_timeout = 7200
+notes = "Exploratory; deferred before completion."
+
+[[condition]]
+id = "B-b4"
+verifier = "gandalf"
+model = "gemini/gemini-3-flash-preview"
+runner = "gandalf-batching"
+repeats = 3
+reasoning_effort = "high"
+concurrency = 6
+batch_size = 4
+
+[[condition]]
+id = "B-b8"
+verifier = "gandalf"
+model = "gemini/gemini-3-flash-preview"
+runner = "gandalf-batching"
+repeats = 3
+reasoning_effort = "high"
+concurrency = 6
+batch_size = 8
+
+[[condition]]
+id = "B-b16"
+verifier = "gandalf"
+model = "gemini/gemini-3-flash-preview"
+runner = "gandalf-batching"
+repeats = 3
+reasoning_effort = "high"
+concurrency = 6
+batch_size = 16
+
+[[condition]]
+id = "B-b32"
+verifier = "gandalf"
+model = "gemini/gemini-3-flash-preview"
+runner = "gandalf-batching"
+repeats = 3
+reasoning_effort = "high"
+concurrency = 6
+batch_size = 32
+
+[[condition]]
+id = "B-b64"
+verifier = "gandalf"
+model = "gemini/gemini-3-flash-preview"
+runner = "gandalf-batching"
+repeats = 3
+reasoning_effort = "high"
+concurrency = 6
+batch_size = 64
+
+[[condition]]
+id = "B-split2"
+verifier = "gandalf"
+model = "gemini/gemini-3-flash-preview"
+runner = "gandalf-batching"
+repeats = 3
+reasoning_effort = "high"
+concurrency = 6
+batch_splits = 2

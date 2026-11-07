@@ -1,0 +1,275 @@
+{
+  "cost_basis": "Recorded model API cost in each trajectory's final_metrics, as reported via OpenRouter and reflecting prompt-caching discounts; not an invoice.",
+  "tool_calls": "Tool calls recorded in the trajectory steps.",
+  "verification_basis": "Complete, selected conditions in results/paper/conditions.csv: total recorded API cost scaled to one pass over the 24 tasks.",
+  "groups": {
+    "Gemini 2.5 Pro": {
+      "rollouts": 12,
+      "tool_calls": {
+        "mean": 21.083333333333332,
+        "median": 22.0,
+        "min": 3,
+        "max": 44
+      },
+      "steps_mean": 22.166666666666668,
+      "prompt_tokens": 23108578,
+      "cached_tokens": 16980745,
+      "completion_tokens": 103493,
+      "cache_share": 0.7348243150227591,
+      "cost_usd": {
+        "total": 11.496214375,
+        "mean": 0.9580178645833333,
+        "median": 0.5000291875,
+        "max": 4.719136999999999,
+        "max_task": "btb-1b181d77",
+        "max_share": 0.41049486779425154
+      }
+    },
+    "GLM-5": {
+      "rollouts": 12,
+      "tool_calls": {
+        "mean": 29.916666666666668,
+        "median": 30.5,
+        "min": 11,
+        "max": 52
+      },
+      "steps_mean": 26.333333333333332,
+      "prompt_tokens": 12493398,
+      "cached_tokens": 11018304,
+      "completion_tokens": 301113,
+      "cache_share": 0.8819301202122913,
+      "cost_usd": {
+        "total": 2.8627524,
+        "mean": 0.23856270000000002,
+        "median": 0.16574016000000003,
+        "max": 0.6034291200000002,
+        "max_task": "btb-515a104d",
+        "max_share": 0.2107863467340033
+      }
+    },
+    "All": {
+      "rollouts": 24,
+      "tool_calls": {
+        "mean": 25.5,
+        "median": 24.0,
+        "min": 3,
+        "max": 52
+      },
+      "steps_mean": 24.25,
+      "prompt_tokens": 35601976,
+      "cached_tokens": 27999049,
+      "completion_tokens": 404606,
+      "cache_share": 0.7864464882511015,
+      "cost_usd": {
+        "total": 14.358966774999999,
+        "mean": 0.5982902822916666,
+        "median": 0.29386172,
+        "max": 4.719136999999999,
+        "max_task": "btb-1b181d77",
+        "max_share": 0.328654357513826
+      }
+    }
+  },
+  "verification": [
+    {
+      "id": "M01",
+      "verifier": "gandalf",
+      "model": "gemini-3-flash-preview",
+      "partition": "split2",
+      "cost_per_pass_usd": 9.805879533333332,
+      "ratio_to_generation": 0.68290982819224
+    },
+    {
+      "id": "M02",
+      "verifier": "gandalf",
+      "model": "gemini-3.1-pro-preview",
+      "partition": "split2",
+      "cost_per_pass_usd": 45.16867466666666,
+      "ratio_to_generation": 3.14567721859407
+    },
+    {
+      "id": "M03",
+      "verifier": "gandalf",
+      "model": "gemini-3.5-flash-lite",
+      "partition": "split2",
+      "cost_per_pass_usd": 6.156618650000001,
+      "ratio_to_generation": 0.42876473958551947
+    },
+    {
+      "id": "M04",
+      "verifier": "gandalf",
+      "model": "gemini-3.8-flash",
+      "partition": "split2",
+      "cost_per_pass_usd": 48.621348375000004,
+      "ratio_to_generation": 3.386131407425031
+    },
+    {
+      "id": "M05",
+      "verifier": "gandalf",
+      "model": "gpt-5.4",
+      "partition": "split2",
+      "cost_per_pass_usd": 49.4618755,
+      "ratio_to_generation": 3.444668148833432
+    },
+    {
+      "id": "M06",
+      "verifier": "gandalf",
+      "model": "gpt-5.4-mini",
+      "partition": "split2",
+      "cost_per_pass_usd": 14.00219465,
+      "ratio_to_generation": 0.9751533567428288
+    },
+    {
+      "id": "M07",
+      "verifier": "gandalf",
+      "model": "gpt-5.4-nano",
+      "partition": "split2",
+      "cost_per_pass_usd": 7.57573299,
+      "ratio_to_generation": 0.5275959690351746
+    },
+    {
+      "id": "M08",
+      "verifier": "gandalf",
+      "model": "gpt-6.1-sol",
+      "partition": "split2",
+      "cost_per_pass_usd": 19.831065166666665,
+      "ratio_to_generation": 1.3810927678441312
+    },
+    {
+      "id": "M09",
+      "verifier": "rewardkit",
+      "model": "gpt-5.4",
+      "partition": "native",
+      "cost_per_pass_usd": 34.749282,
+      "ratio_to_generation": 2.4200405603348156
+    },
+    {
+      "id": "M10",
+      "verifier": "rewardkit",
+      "model": "gpt-5.4-mini",
+      "partition": "native",
+      "cost_per_pass_usd": 10.675977750000001,
+      "ratio_to_generation": 0.7435059860008627
+    },
+    {
+      "id": "M11",
+      "verifier": "rewardkit",
+      "model": "gpt-5.4-nano",
+      "partition": "native",
+      "cost_per_pass_usd": 4.2732631,
+      "ratio_to_generation": 0.29760240879170086
+    },
+    {
+      "id": "M12",
+      "verifier": "rewardkit",
+      "model": "gpt-6.1-sol",
+      "partition": "native",
+      "cost_per_pass_usd": 12.016361166666668,
+      "ratio_to_generation": 0.836854166108109
+    },
+    {
+      "id": "M13",
+      "verifier": "archipelago",
+      "model": "gemini-3-flash-preview",
+      "partition": "native",
+      "cost_per_pass_usd": 46.72989353333334,
+      "ratio_to_generation": 3.254405018520794
+    },
+    {
+      "id": "M14",
+      "verifier": "archipelago",
+      "model": "gpt-5.4",
+      "partition": "native",
+      "cost_per_pass_usd": 144.6369995,
+      "ratio_to_generation": 10.072939213970708
+    },
+    {
+      "id": "M15",
+      "verifier": "archipelago",
+      "model": "gpt-5.4-mini",
+      "partition": "native",
+      "cost_per_pass_usd": 20.7779888,
+      "ratio_to_generation": 1.4470392699965002
+    },
+    {
+      "id": "M16",
+      "verifier": "aaaj",
+      "model": "gemini-3-flash-preview",
+      "partition": "native",
+      "cost_per_pass_usd": 53.24658351666667,
+      "ratio_to_generation": 3.708246167779483
+    },
+    {
+      "id": "M17",
+      "verifier": "aaaj",
+      "model": "gpt-5.4",
+      "partition": "native",
+      "cost_per_pass_usd": 47.16372850000001,
+      "ratio_to_generation": 3.284618541085803
+    },
+    {
+      "id": "M18",
+      "verifier": "aaaj",
+      "model": "gpt-5.4-mini",
+      "partition": "native",
+      "cost_per_pass_usd": 10.9052004,
+      "ratio_to_generation": 0.7594697147002766
+    },
+    {
+      "id": "M19",
+      "verifier": "autorubric",
+      "model": "gemini-3-flash-preview",
+      "partition": "native",
+      "cost_per_pass_usd": 80.9213363,
+      "ratio_to_generation": 5.635596040300748
+    },
+    {
+      "id": "B-b4",
+      "verifier": "gandalf",
+      "model": "gemini-3-flash-preview",
+      "partition": "b4",
+      "cost_per_pass_usd": 71.85266905,
+      "ratio_to_generation": 5.004027808957724
+    },
+    {
+      "id": "B-b8",
+      "verifier": "gandalf",
+      "model": "gemini-3-flash-preview",
+      "partition": "b8",
+      "cost_per_pass_usd": 43.102838600000005,
+      "ratio_to_generation": 3.001806416534452
+    },
+    {
+      "id": "B-b16",
+      "verifier": "gandalf",
+      "model": "gemini-3-flash-preview",
+      "partition": "b16",
+      "cost_per_pass_usd": 25.7150237,
+      "ratio_to_generation": 1.7908686678467505
+    },
+    {
+      "id": "B-b32",
+      "verifier": "gandalf",
+      "model": "gemini-3-flash-preview",
+      "partition": "b32",
+      "cost_per_pass_usd": 15.52336845,
+      "ratio_to_generation": 1.081092302339421
+    },
+    {
+      "id": "B-b64",
+      "verifier": "gandalf",
+      "model": "gemini-3-flash-preview",
+      "partition": "b64",
+      "cost_per_pass_usd": 9.866281183333335,
+      "ratio_to_generation": 0.6871163738961529
+    },
+    {
+      "id": "B-split2",
+      "verifier": "gandalf",
+      "model": "gemini-3-flash-preview",
+      "partition": "split2",
+      "cost_per_pass_usd": 10.15668785,
+      "ratio_to_generation": 0.7073411345782574
+    }
+  ]
+}

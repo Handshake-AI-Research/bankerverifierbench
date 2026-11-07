@@ -1,0 +1,10 @@
+capability,display_name,n_unique_criteria,fp_pct_all,fn_pct_all,fn_minus_fp_pp,fp_pct_given_met,fn_pct_given_unmet
+audit_quantitative_metric_calculation_capability,Audit quantitative metric calculation,522,3.9,5.1,1.2,6.8,12.0
+verify_literal_data_point_accuracy_capability,Verify literal data point accuracy,399,2.3,3.0,0.8,3.1,11.2
+audit_governance_and_strategic_narrative_capability,Audit governance and strategic narrative,129,3.6,4.4,0.8,5.0,16.2
+verify_structural_component_inventory_capability,Verify structural component inventory,322,4.1,2.9,-1.2,5.0,16.4
+validate_document_labeling_and_metadata_capability,Validate document labeling and metadata,223,6.0,4.3,-1.6,8.5,14.6
+reconcile_cross_component_data_linkage_capability,Reconcile cross component data linkage,227,8.7,5.9,-2.8,14.6,14.5
+audit_accounting_logic_and_convention_capability,Audit accounting logic and convention,113,8.8,4.1,-4.7,13.5,12.0
+inspect_visual_presentation_and_style_capability,Inspect visual presentation and style,406,12.6,3.5,-9.1,24.1,7.4
+validate_temporal_and_sequential_integrity_capability,Validate temporal and sequential integrity,123,11.7,2.4,-9.2,13.8,15.8

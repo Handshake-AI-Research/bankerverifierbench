@@ -1,0 +1,3 @@
+# Preserve the exact bytes of the hash-manifested paper results, including CSV
+# CRLF and intentional whitespace in quoted source criteria.
+results/paper/** -text -whitespace

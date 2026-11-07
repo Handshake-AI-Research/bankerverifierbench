@@ -1,0 +1,16 @@
+
+# Logging applies only where the native OpenHands runtime is installed.
+if LLM is not None:
+
+    # Isolated experiment logging only. Delegate unchanged arguments to the native judge.
+    import json as _bvb_json
+    import gandalf.judge as _bvb_judge
+    _bvb_session = _bvb_judge.run_agent_session
+
+    def _bvb_observe_session(model, mcp_servers, workdir, prompt):
+        print('[BVB_ACTUAL_SESSION] ' + _bvb_json.dumps(dict(model=model,workdir=workdir,prompt=prompt), ensure_ascii=False), flush=True)
+        result = _bvb_session(model, mcp_servers, workdir, prompt)
+        print('[BVB_SESSION_USAGE] ' + result.model_dump_json(), flush=True)
+        return result
+
+    _bvb_judge.run_agent_session = _bvb_observe_session

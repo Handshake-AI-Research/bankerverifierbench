@@ -1,0 +1,329 @@
+[
+  {
+    "name": "verify_literal_data_point_accuracy_capability",
+    "description": "The ability to verify that specific hardcoded constants, numerical inputs, and discrete categorical attributes in the deliverable match provided source data or instructions exactly.",
+    "diagnostic_signal": "The verifier's reasoning trace performs a direct character-for-character or digit-for-digit comparison between a value in the artifact and a reference point from the input prompt or external data source.",
+    "example_pattern": "A user provides a tax rate of 21.0% in the instructions, and the verifier confirms that the 'Assumptions' tab of the model contains exactly 21.0% and not a rounded or different value.",
+    "non_examples": [
+      "if the verifier is tracing how a value from one part of the document is used in another part, prefer `reconcile_cross_component_data_linkage_capability`.",
+      "if the verifier is checking the mathematical result of an arithmetic operation involving multiple cells, prefer `audit_quantitative_metric_calculation_capability`."
+    ],
+    "member_input_names": [
+      "verify_static_numeric_assumption_capability",
+      "discrete_data_point_value_verification_capability",
+      "verify_external_regulatory_filing_accuracy_capability",
+      "matching_discrete_attribute_fidelity_capability",
+      "locate_specific_financial_conclusion_metric_capability",
+      "audit_fixed_parameter_application_logic_capability",
+      "verify_financing_instrument_specification_alignment_capability",
+      "verify_financial_basket_limitation_details_capability",
+      "verifying_dataset_extrema_value_consistency_capability",
+      "financial_metric_and_attribute_recognition_capability"
+    ],
+    "_source_cluster_ids": [
+      6,
+      17,
+      23,
+      28,
+      32,
+      36,
+      53,
+      58,
+      66,
+      77
+    ],
+    "_primary_weight": 826,
+    "_primary_share_pct": 25.78,
+    "bottlenecks_axial_codes": [
+      "__all__"
+    ]
+  },
+  {
+    "name": "audit_quantitative_metric_calculation_capability",
+    "description": "Evaluating the mathematical derivation of financial metrics and ratios, including the correct application of multipliers, percentage-based drivers, and scenario-dependent logic.",
+    "diagnostic_signal": "The verifier's reasoning trace contains an explicit step-by-step recalculation of a derived figure, such as an IRR, multiple, or fee, using the arithmetic logic prescribed in the rubric.",
+    "example_pattern": "The verifier extracts the Enterprise Value and EBITDA from a summary table and manually calculates the EV/EBITDA multiple to confirm it matches the reported figure.",
+    "non_examples": [
+      "if the verifier is checking accounting identities like balance sheet equilibrium or sign conventions in a bridge, prefer `audit_accounting_logic_and_convention_capability`.",
+      "if the verifier is only checking if a scalar constant matches the prompt, prefer `verify_literal_data_point_accuracy_capability`."
+    ],
+    "member_input_names": [
+      "financial_metric_derivation_logic_audit_capability",
+      "evaluate_quantitative_variance_and_sensitivity_capability",
+      "verify_transaction_pricing_and_fee_logic_capability",
+      "verify_financial_return_and_assumption_accuracy_capability",
+      "projection_driver_application_logic_tracing_capability",
+      "financial_return_metric_logic_and_presentation_capability",
+      "circular_reference_switch_logic_verification_capability",
+      "toggle_dependent_calculation_path_audit_capability",
+      "validate_sensitivity_table_axes_and_baseline_capability",
+      "audit_financial_valuation_logic_steps_capability"
+    ],
+    "_source_cluster_ids": [
+      2,
+      3,
+      4,
+      10,
+      14,
+      19,
+      60,
+      64,
+      72,
+      75
+    ],
+    "_primary_weight": 537,
+    "_primary_share_pct": 16.76,
+    "bottlenecks_axial_codes": [
+      "__all__"
+    ]
+  },
+  {
+    "name": "reconcile_cross_component_data_linkage_capability",
+    "description": "The ability to audit data flow and consistency by reconciling values, labels, or formulas across different sections, schedules, or files of a complex deliverable.",
+    "diagnostic_signal": "The verifier's reasoning identifies the source location of a value and confirms its parity with a target location in a separate part of the artifact.",
+    "example_pattern": "The verifier confirms that the ending cash balance on the 'Cash Flow' sheet is the exact value used as the starting cash balance on the 'Balance Sheet' sheet for the subsequent period.",
+    "non_examples": [
+      "if the verifier is checking if a value matches the external source prompt, prefer `verify_literal_data_point_accuracy_capability`.",
+      "if the verifier is checking the logical order of periods rather than the linkage of values, prefer `validate_temporal_and_sequential_integrity_capability`."
+    ],
+    "member_input_names": [
+      "cross_section_data_linkage_reconciliation_capability",
+      "trace_cross_section_source_linkage_capability",
+      "audit_centralized_assumption_input_and_linkage_capability",
+      "verify_cell_content_provenance_and_metadata_capability",
+      "internal_equity_component_tie_out_capability",
+      "cross_check_business_logic_consistency_capability",
+      "verify_period_opening_balance_and_reconciliation_plug_capability",
+      "audit_schedule_structure_and_linkage_capability",
+      "structural_source_reference_scan_capability"
+    ],
+    "_source_cluster_ids": [
+      0,
+      7,
+      25,
+      27,
+      29,
+      43,
+      48,
+      50,
+      52
+    ],
+    "_primary_weight": 388,
+    "_primary_share_pct": 12.11,
+    "bottlenecks_axial_codes": [
+      "__all__"
+    ]
+  },
+  {
+    "name": "audit_accounting_logic_and_convention_capability",
+    "description": "Verifying the adherence to financial accounting principles, including sign conventions, balancing identities, and the component completeness of reconciliation bridges.",
+    "diagnostic_signal": "The verifier identifies whether mathematical signs are correctly applied (e.g., outflows as negatives) or flags whether a set of components successfully reconciles to a net total.",
+    "example_pattern": "The verifier audits a Net Debt bridge to ensure that 'Cash' is subtracted and 'Debt' is added, and that the resulting sum matches the final Net Debt figure.",
+    "non_examples": [
+      "if the verifier is checking complex valuation multiples or financial returns like MOIC, prefer `audit_quantitative_metric_calculation_capability`.",
+      "if the verifier is checking if a data point matches the original source, prefer `verify_literal_data_point_accuracy_capability`."
+    ],
+    "member_input_names": [
+      "financial_line_item_and_logic_audit_capability",
+      "verify_financial_bridge_reconciliation_logic_capability",
+      "verify_financial_item_treatment_logic_capability"
+    ],
+    "_source_cluster_ids": [
+      8,
+      26,
+      51
+    ],
+    "_primary_weight": 432,
+    "_primary_share_pct": 13.483,
+    "bottlenecks_axial_codes": [
+      "__all__"
+    ]
+  },
+  {
+    "name": "verify_structural_component_inventory_capability",
+    "description": "The ability to inventory the physical or digital presence of mandatory sections, files, columns, and other structural blocks, including quantitative element counts.",
+    "diagnostic_signal": "The verifier's reasoning explicitly mentions counting specific elements or confirms the existence of a named section before inspecting its content.",
+    "example_pattern": "The verifier checks that a financial model contains exactly 60 monthly columns as requested and confirms the presence of the 'Summary' and 'Detail' worksheets.",
+    "non_examples": [
+      "if the verifier is inspecting the text strings used for naming these components, prefer `validate_document_labeling_and_metadata_capability`.",
+      "if the verifier is checking the visual alignment or font of the components, prefer `inspect_visual_presentation_and_style_capability`."
+    ],
+    "member_input_names": [
+      "spatial_organization_and_element_count_capability",
+      "audit_artifact_inventory_completeness_capability",
+      "locate_hierarchical_document_sections_and_components_capability",
+      "detect_labeled_functional_component_presence_capability",
+      "spatial_and_structural_content_localization_capability",
+      "file_naming_and_format_integrity_verification_capability"
+    ],
+    "_source_cluster_ids": [
+      1,
+      21,
+      38,
+      39,
+      61,
+      79
+    ],
+    "_primary_weight": 239,
+    "_primary_share_pct": 7.459,
+    "bottlenecks_axial_codes": [
+      "__all__"
+    ]
+  },
+  {
+    "name": "validate_document_labeling_and_metadata_capability",
+    "description": "The ability to verify the accuracy and presence of specific textual labels, tab names, headers, and metadata tags within a deliverable.",
+    "diagnostic_signal": "The verifier's trace demonstrates a string-matching operation against a component identifier, such as a chart axis title, a worksheet name, or a summary row label.",
+    "example_pattern": "The verifier confirms that the sensitivity table axis is labeled 'Revenue Growth %' and that the worksheet tab is named 'LBO_Model' exactly as specified.",
+    "non_examples": [
+      "if the verifier is checking for the physical existence or count of sections, prefer `verify_structural_component_inventory_capability`.",
+      "if the verifier is evaluating the visual color or font of the label, prefer `inspect_visual_presentation_and_style_capability`."
+    ],
+    "member_input_names": [
+      "verifying_tabular_structural_labels_and_attributes_capability",
+      "inspect_visualization_components_and_labels_capability",
+      "identifying_literal_text_and_structural_element_capability",
+      "locate_specific_document_metadata_labels_capability",
+      "verify_summary_aggregation_row_attributes_capability",
+      "structural_navigational_usability_assessment_capability"
+    ],
+    "_source_cluster_ids": [
+      12,
+      30,
+      33,
+      35,
+      59,
+      65
+    ],
+    "_primary_weight": 267,
+    "_primary_share_pct": 8.333,
+    "bottlenecks_axial_codes": [
+      "__all__"
+    ]
+  },
+  {
+    "name": "validate_temporal_and_sequential_integrity_capability",
+    "description": "Verifying chronological alignment, logical period sequencing, and the consistency of historical versus forecast data boundaries.",
+    "diagnostic_signal": "The verifier's reasoning identifies discrepancies in timelines, date ranges, or the order of process milestones and seniority rankings.",
+    "example_pattern": "The verifier confirms that the model starts on the specified transaction date and that each subsequent column represents exactly one fiscal quarter without interruption.",
+    "non_examples": [
+      "if the verifier is checking a static numerical value that is not date-driven, prefer `verify_literal_data_point_accuracy_capability`.",
+      "if the verifier is reconciling a value across two different sheets for the same period, prefer `reconcile_cross_component_data_linkage_capability`."
+    ],
+    "member_input_names": [
+      "forecast_period_assumption_consistency_audit_capability",
+      "verify_sequential_progression_and_increment_capability",
+      "validate_temporal_strings_and_date_conventions_capability",
+      "evaluate_logical_ordering_and_temporal_sequencing_capability",
+      "longitudinal_track_record_and_growth_logic_capability",
+      "distinguish_historical_and_forecast_data_capability",
+      "hierarchical_priority_sequence_verification_capability",
+      "verify_critical_workstream_milestone_inclusion_capability"
+    ],
+    "_source_cluster_ids": [
+      11,
+      18,
+      37,
+      44,
+      45,
+      54,
+      63,
+      76
+    ],
+    "_primary_weight": 211,
+    "_primary_share_pct": 6.586,
+    "bottlenecks_axial_codes": [
+      "__all__"
+    ]
+  },
+  {
+    "name": "inspect_visual_presentation_and_style_capability",
+    "description": "Evaluating visual attributes such as font, color, alignment, whitespace, and adherence to corporate branding or professional presentation standards.",
+    "diagnostic_signal": "The verifier identifies specific styling metadata like hex codes, point sizes, or layout coordinates to confirm visual compliance.",
+    "example_pattern": "The verifier checks that all input cells are color-coded in blue and that the company logo is placed in the top-right corner of the executive summary.",
+    "non_examples": [
+      "if the verifier is checking the textual content of a label rather than its font/color, prefer `validate_document_labeling_and_metadata_capability`.",
+      "if the verifier is counting the number of columns, prefer `verify_structural_component_inventory_capability`."
+    ],
+    "member_input_names": [
+      "inspect_visual_formatting_and_typographic_properties_capability",
+      "detect_visual_element_presence_and_boundary_integrity_capability",
+      "lateral_spatial_component_positioning_capability",
+      "audit_professional_presentation_visual_composition_and_narrative_capability",
+      "verify_corporate_brand_identity_accuracy_capability"
+    ],
+    "_source_cluster_ids": [
+      13,
+      15,
+      22,
+      56,
+      73
+    ],
+    "_primary_weight": 147,
+    "_primary_share_pct": 4.588,
+    "bottlenecks_axial_codes": [
+      "__all__"
+    ]
+  },
+  {
+    "name": "audit_governance_and_strategic_narrative_capability",
+    "description": "The ability to verify the presence of legal disclosures, regulatory boilerplate, and the semantic coherence of strategic business justifications and entity classifications.",
+    "diagnostic_signal": "The verifier identifies mandatory legal phrases, assesses the professional tone of a response, or validates that entities are correctly grouped into strategic market segments.",
+    "example_pattern": "The verifier checks for a verbatim SEC disclaimer at the bottom of the page and evaluates whether the strategic rationale for an acquisition accurately describes the target's market position.",
+    "non_examples": [
+      "if the verifier is checking the accuracy of a specific quantitative figure mentioned in the text, prefer `verify_literal_data_point_accuracy_capability`.",
+      "if the verifier is auditing the mathematical logic of the financial metrics mentioned in the rationale, prefer `audit_quantitative_metric_calculation_capability`."
+    ],
+    "member_input_names": [
+      "legal_and_regulatory_disclosure_verification_capability",
+      "regulatory_disclosure_adherence_verification_capability",
+      "document_footnote_and_disclosure_audit_capability",
+      "identify_required_standard_investment_disclaimer_capability",
+      "interpret_data_source_contextual_qualifiers_capability",
+      "evaluating_claim_qualifications_and_limitations_capability",
+      "distinguish_hypothetical_claims_from_facts_capability",
+      "qualitative_narrative_rationale_and_logic_capability",
+      "audit_methodological_limitation_and_rationale_capability",
+      "interpret_thematic_subject_matter_capability",
+      "identifying_qualitative_strategic_positioning_claims_capability",
+      "interpret_strategic_and_logical_intent_capability",
+      "audit_linguistic_mechanics_and_professional_tone_capability",
+      "evaluating_professional_business_standard_readiness_capability",
+      "verify_peer_group_entity_membership_capability",
+      "audit_named_entity_inventory_and_relevance_capability",
+      "business_segmentation_strategic_logic_audit_capability",
+      "verifying_organizational_activity_status_capability",
+      "validate_comparative_performance_leverage_logic_capability",
+      "strategic_acquirer_rationale_and_identity_validation_capability",
+      "credit_facility_limit_compliance_verification_capability"
+    ],
+    "_source_cluster_ids": [
+      5,
+      9,
+      16,
+      20,
+      24,
+      31,
+      34,
+      40,
+      41,
+      42,
+      46,
+      47,
+      49,
+      55,
+      57,
+      62,
+      67,
+      68,
+      70,
+      74,
+      78
+    ],
+    "_primary_weight": 151,
+    "_primary_share_pct": 4.713,
+    "bottlenecks_axial_codes": [
+      "__all__"
+    ]
+  }
+]

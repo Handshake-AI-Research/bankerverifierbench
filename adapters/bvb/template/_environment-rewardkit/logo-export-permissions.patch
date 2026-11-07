@@ -1,0 +1,11 @@
+--- a/tools/company_brand_assets.py
++++ b/tools/company_brand_assets.py
+@@ -200,6 +200,8 @@
+             dest_dir.mkdir(parents=True, exist_ok=True)
+             dest_file = dest_dir / entry.filename
+             shutil.copy2(str(src), str(dest_file))
++            # Exported evidence is shared; the original cache stays private.
++            dest_file.chmod(0o640)
+         finally:
+             os.umask(old_umask)
+ 

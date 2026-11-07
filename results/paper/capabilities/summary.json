@@ -1,0 +1,68 @@
+{
+  "n_criteria": 2464,
+  "n_tasks": 24,
+  "n_predictions": 179455,
+  "confusion_counts_reconciled": true,
+  "primary_counts": {
+    "Audit quantitative metric calculation": 522,
+    "Inspect visual presentation and style": 406,
+    "Verify literal data point accuracy": 399,
+    "Verify structural component inventory": 322,
+    "Reconcile cross component data linkage": 227,
+    "Validate document labeling and metadata": 223,
+    "Audit governance and strategic narrative": 129,
+    "Validate temporal and sequential integrity": 123,
+    "Audit accounting logic and convention": 113
+  },
+  "gandalf_lowest_point_estimate": "7 of 9",
+  "gandalf_lowest_capabilities": [
+    "Audit quantitative metric calculation",
+    "Inspect visual presentation and style",
+    "Verify literal data point accuracy",
+    "Verify structural component inventory",
+    "Validate document labeling and metadata",
+    "Validate temporal and sequential integrity",
+    "Audit accounting logic and convention"
+  ],
+  "gandalf_not_lowest": {
+    "Reconcile cross component data linkage": "autorubric",
+    "Audit governance and strategic narrative": "archipelago"
+  },
+  "gandalf_resolved_better_than_all_three_flash_baselines": [],
+  "gandalf_vs_archipelago_resolved": [
+    "Validate temporal and sequential integrity (+7.0 pp)"
+  ],
+  "multi_tag_best_same_as_primary": 7,
+  "archipelago_fn_dominant": [
+    "Audit quantitative metric calculation",
+    "Verify literal data point accuracy",
+    "Audit governance and strategic narrative"
+  ],
+  "opc_predictions": "OpenClaw verdicts: Gandalf, Archipelago, AAAJ and AutoRubric on Gemini 3 Flash, three passes",
+  "opc_primary_counts": {
+    "Verify literal data point accuracy": 200,
+    "Reconcile cross component data linkage": 20,
+    "Verify structural component inventory": 53,
+    "Inspect visual presentation and style": 4,
+    "Validate document labeling and metadata": 41,
+    "Audit governance and strategic narrative": 66,
+    "Validate temporal and sequential integrity": 12
+  },
+  "opc_n_tasks": 24,
+  "opc_gandalf_lowest": "5 of 6 capabilities with n>=5",
+  "opc_gandalf_not_lowest": {
+    "Validate document labeling and metadata": "autorubric"
+  },
+  "opc_gandalf_resolved_better_than_all_three": [],
+  "seed": 20261102,
+  "bootstrap_draws": 2000,
+  "replicate_tags_gandalf_lowest": "7 of 9",
+  "replicate_tags_max_abs_error_shift_pp": 4.0,
+  "replicate_primary_agreement": 0.881,
+  "replicate_primary_agreement_ci95": [
+    0.868,
+    0.893
+  ],
+  "replicate_primary_kappa": 0.862,
+  "replicate_primary_in_any_tag": 0.974
+}

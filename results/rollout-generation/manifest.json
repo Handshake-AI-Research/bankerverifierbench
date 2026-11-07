@@ -1,0 +1,23 @@
+{
+  "schema": "bvb-rollout-generation/v1",
+  "dataset_repository": "handshake-ai-research/BankerVerifierBench",
+  "dataset_revision": "e8068910360bcb54459a18c97cfc8d1548da37c1",
+  "dataset_manifest_sha256": "c72e25f07964d910803c09ce0c839e1b65ca2d8fc29c74aace8a4ff079e7143d",
+  "rollouts": 24,
+  "builder_sha256": "09ac03c588570a4db880d7929535cb476d7098c92007d1f6d5ecb4f3f8c5a81f",
+  "inputs": {
+    "conditions_csv_sha256": "139d5b623e1d38f414c4a496ef6e97ed8e35c219ab4a3ae43994521316fab1bd"
+  },
+  "files": [
+    {
+      "path": "rollouts.csv",
+      "bytes": 4232,
+      "sha256": "4114efd3811868f39a7aaf23d6b44dab077534c3ba2ffed8c3bd13a3747fc0fb"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 7576,
+      "sha256": "f2a70304dbe7db789e5d5fe7ff18a0e86b5f5c9b8f979d24efa168f8ca35ec0b"
+    }
+  ]
+}
